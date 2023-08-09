@@ -3,9 +3,9 @@ const axios = require("axios");
 const checkIn = async (cookie) => {
     return axios({
         method: 'post',
-        url: 'https://glados.one/api/user/checkin',
+        url: 'https://glados.rocks/api/user/checkin',
         data: {
-            token: "glados_network"
+            token: "glados.one"
         },
         headers: {
           cookie
@@ -16,7 +16,7 @@ const checkIn = async (cookie) => {
 const status = async (cookie) => {
     return axios({
         method: 'get',
-        url: 'https://glados.one/api/user/status',
+        url: 'https://glados.rocks/api/user/status',
         headers: {
           cookie
         }
